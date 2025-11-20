@@ -11,7 +11,7 @@ export const Method = () => {
       label: "Análise de Mercado",
     },
     {
-      icon: TrendingUp,
+      icon: null,
       label: "Estratégia",
     },
     {
@@ -40,28 +40,38 @@ export const Method = () => {
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 max-w-5xl mx-auto">
-          {steps.map((step, index) => (
-            <div key={index} className="flex flex-col items-center gap-4">
-              <div className="relative">
-                <div className="w-20 h-20 rounded-full bg-card border-2 border-border flex items-center justify-center">
-                  <step.icon className="w-8 h-8 text-foreground" />
+        <div className="flex justify-center items-center gap-0 max-w-5xl mx-auto">
+          <div className="flex items-center gap-0">
+            {steps.map((step, index) => (
+              <div key={index} className="flex items-center">
+                <div className="flex flex-col items-center gap-3">
+                  {index === 2 ? (
+                    <div className="relative w-28 h-28 flex items-center justify-center">
+                      <svg width="112" height="112" viewBox="0 0 112 112" className="absolute">
+                        <polygon 
+                          points="56,8 92,28 92,68 56,88 20,68 20,28" 
+                          fill="hsl(var(--primary))"
+                          stroke="hsl(var(--primary))"
+                          strokeWidth="2"
+                        />
+                      </svg>
+                      <span className="text-4xl font-bold text-primary-foreground relative z-10">N</span>
+                    </div>
+                  ) : (
+                    <div className="w-20 h-20 rounded-full bg-background border-2 border-border flex items-center justify-center">
+                      {step.icon && <step.icon className="w-8 h-8 text-foreground" strokeWidth={1.5} />}
+                    </div>
+                  )}
+                  
+                  <span className="text-sm font-medium text-foreground whitespace-nowrap">{step.label}</span>
                 </div>
-                {index === 2 && (
-                  <div className="absolute -top-2 -right-2 w-12 h-12 rounded-full bg-primary flex items-center justify-center">
-                    <span className="text-2xl font-bold text-primary-foreground">N</span>
-                  </div>
+                
+                {index < steps.length - 1 && (
+                  <div className="w-16 h-0.5 bg-border mx-4" />
                 )}
               </div>
-              
-              <span className="text-sm font-medium text-foreground">{step.label}</span>
-              
-              {index < steps.length - 1 && (
-                <div className="hidden md:block absolute w-24 h-0.5 bg-border" 
-                     style={{ left: `${(index + 1) * 140}px`, top: '50%' }} />
-              )}
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

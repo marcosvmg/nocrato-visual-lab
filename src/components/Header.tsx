@@ -1,14 +1,21 @@
 import logo from "@/assets/logo.png";
+import { Button } from "@/components/ui/button";
 
 export const Header = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-      <div className="container py-4">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-primary border-b border-primary/20">
+      <div className="container py-4 flex items-center justify-between">
         <img 
           src={logo} 
           alt="Nocrato Marketing" 
-          className="h-8 invert dark:invert-0" 
+          className="h-8" 
         />
+        <Button 
+          variant="secondary"
+          className="bg-background text-foreground hover:bg-background/90 font-semibold"
+        >
+          Mais Informações
+        </Button>
       </div>
     </header>
   );

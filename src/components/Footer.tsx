@@ -8,7 +8,7 @@ export const Footer = () => {
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           <div>
             <img src={logo} alt="Nocrato Marketing" className="h-8 mb-4" />
-            <p className="text-sm text-primary mb-2">📞 +55 11 97700-7791</p>
+            <p className="text-sm text-primary mb-2">📞 +55 13991187759</p>
             <p className="text-sm text-primary">✉ nocrato@nocrato.com.br</p>
           </div>
           

@@ -2,7 +2,7 @@ import { Search, Target, User, ShoppingBag, BookOpen } from "lucide-react";
 
 export const Method = () => {
     return (
-        <section className="py-20 bg-[#0f0f10] relative overflow-hidden">
+        <section id="method" className="py-20 bg-[#0f0f10] relative overflow-hidden">
             {/* Background Pattern imitation (subtle lines) */}
             <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
                  style={{

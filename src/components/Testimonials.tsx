@@ -30,18 +30,18 @@ export const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20 bg-primary/10">
+    <section className="py-20 bg-primary">
       <div className="container">
         <div className="mb-12">
-          <h2 className="text-sm font-semibold text-muted-foreground mb-2 tracking-wider">
+          <h2 className="text-sm font-semibold text-primary-foreground/70 mb-2 tracking-wider">
             Veja Alguns
           </h2>
-          <h3 className="text-4xl md:text-5xl font-bold text-foreground">DEPOIMENTOS</h3>
+          <h3 className="text-4xl md:text-5xl font-bold text-primary-foreground">DEPOIMENTOS</h3>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="bg-card border-border overflow-hidden">
+            <Card key={index} className="bg-background/95 border-none overflow-hidden shadow-lg">
               <div className="h-40 bg-muted overflow-hidden">
                 <img 
                   src={testimonial.image} 

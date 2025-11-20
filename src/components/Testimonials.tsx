@@ -1,28 +1,31 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import drMarcioImg from "@/assets/drmarcio.png";
+import tradusambaImg from "@/assets/tradusamba.png";
+import draFabianaImg from "@/assets/drafabiana.png";
 
 export const Testimonials = () => {
   const testimonials = [
     {
-      name: "Marcela de Amorim",
-      role: "DIRETORA",
-      company: "Nutrição e Saúde",
-      text: "Começamos a usar o Instagram há 6 meses, crescendo 100% em vendas em 5 meses. Isso representa uma verdadeira reviravolta para nós.",
-      image: "/api/placeholder/300/200",
+      name: "DR MARCIO",
+      role: "DR MARCIO",
+      subtitle: "Ele lotou sua agenda por 2 meses",
+      text: "Excelente trabalho! Minha empresa melhorou 100% com a parceria com a Nocrato. Nota 10!",
+      image: drMarcioImg,
     },
     {
-      name: "Julia Martins",
-      role: "VENDEDORA",
-      company: "Bella Donna",
-      text: "Muito satisfeita e feliz! Foram criados campanhas em múltiplas redes sociais. Ótima experiência ao longo de todo o trabalho!",
-      image: "/api/placeholder/300/200",
+      name: "TRADUSAMBA",
+      role: "TRADUSAMBA",
+      subtitle: "Eles tiveram uma nova identidade visual",
+      text: "Risus commodo id odio turpis pharetra elementum. Pulvinar porta porta feugiat scelerisque in elit. Morbi rhoncus, tellus, eros consequat magna semper orci a tincidunt.",
+      image: tradusambaImg,
     },
     {
-      name: "Renata Cunha",
-      role: "CEO - GROWTH",
-      company: "C&A",
-      text: "Esta campanha foi uma ruptura completa do meu fluxo anterior. Ótima ideia, confio 100% no trabalho e recomendo 100%.",
-      image: "/api/placeholder/300/200",
+      name: "DRA FABIANA",
+      role: "DRA FABIANA",
+      subtitle: "",
+      text: "Risus commodo id odio turpis pharetra elementum. Pulvinar porta porta feugiat scelerisque in elit. Morbi rhoncus, tellus, eros consequat magna semper orci a tincidunt.",
+      image: draFabianaImg,
     },
   ];
 
@@ -48,11 +51,12 @@ export const Testimonials = () => {
               </div>
               <CardContent className="p-6">
                 <div className="mb-4">
+                  {testimonial.subtitle && (
+                    <p className="text-sm text-foreground italic mb-2">{testimonial.subtitle}</p>
+                  )}
                   <Badge className="bg-primary text-primary-foreground mb-2">
                     {testimonial.role}
                   </Badge>
-                  <h4 className="font-bold text-foreground">{testimonial.name}</h4>
-                  <p className="text-sm text-muted-foreground">{testimonial.company}</p>
                 </div>
                 <p className="text-sm text-foreground leading-relaxed">
                   "{testimonial.text}"

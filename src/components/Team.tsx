@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import bricioImg from "@/assets/bricio.png";
 import pedroImg from "@/assets/pedro.png";
 import sophiaImg from "@/assets/sophia.png";
 import saraImg from "@/assets/sara.png";
@@ -10,7 +11,7 @@ export const Team = () => {
       name: "BRÍCIO",
       role: "ANALISTA",
       description: "Fotógrafo, social media e gestor do Nocrato Marketing. Formado em Publicidade e Propaganda.",
-      image: pedroImg,
+      image: bricioImg,
       badge: "FOTOGRAFIA",
     },
     {

@@ -14,8 +14,11 @@ export const Contact = () => {
         <Button 
           size="lg"
           className="bg-background hover:bg-background/90 text-foreground font-semibold px-8 py-6 text-lg"
+          asChild
         >
-          CLIQUE AQUI E AGENDE AGORA MESMO A NOSSA REUNIÃO
+          <a href="http://wa.me/5513991187759" target="_blank" rel="noopener noreferrer">
+            CLIQUE AQUI E AGENDE AGORA MESMO A NOSSA REUNIÃO
+          </a>
         </Button>
       </div>
     </section>

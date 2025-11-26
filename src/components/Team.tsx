@@ -16,17 +16,17 @@ export const Team = () => {
     },
     {
       name: "PEDRO",
-      role: "DESIGNER",
+      role: "PROGRAMADOR",
       description: "Desenvolvedor Web, Engenheiro de IA. Mais Engenheiro do que IA, mas é o cara certo para o trabalho!",
       image: pedroImg,
-      badge: "DESIGNER",
+      badge: "PROGRAMADOR",
     },
     {
       name: "SOPHIA",
-      role: "REDATORA",
+      role: "Designer",
       description: "Designer Sênior, Publicitária. Licencia de Arte, Especialista em Publicidade e Marketing. Tem mais ilustrações que a gente.",
       image: sophiaImg,
-      badge: "PUBLICIDADE",
+      badge: "MARKETING",
     },
     {
       name: "SARA SANTOS",

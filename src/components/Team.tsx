@@ -19,7 +19,7 @@ export const Team = () => {
       role: "PROGRAMADOR",
       description: "Desenvolvedor Web, Engenheiro de IA. Mais Engenheiro do que IA, mas é o cara certo para o trabalho!",
       image: pedroImg,
-      badge: "PROGRAMADOR",
+      badge: "DEV",
     },
     {
       name: "SOPHIA",

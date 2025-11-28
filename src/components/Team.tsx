@@ -10,30 +10,30 @@ export const Team = () => {
     {
       name: "BRÍCIO",
       role: "ANALISTA",
-      description: "Fotógrafo, social media e gestor do Nocrato Marketing. Formado em Publicidade e Propaganda.",
+      description: "Estrategista digital, e gestor da agência nocrato…",
       image: bricioImg,
-      badge: "FOTOGRAFIA",
+      badge: "ESTRATEGISTA",
     },
     {
       name: "PEDRO",
-      role: "PROGRAMADOR",
+      role: "DESIGNER",
       description: "Desenvolvedor Web, Engenheiro de IA. Mais Engenheiro do que IA, mas é o cara certo para o trabalho!",
       image: pedroImg,
-      badge: "DEV",
+      badge: "PROGRAMADOR",
     },
     {
       name: "SOPHIA",
-      role: "Designer",
+      role: "REDATORA",
       description: "Designer Sênior, Publicitária. Licencia de Arte, Especialista em Publicidade e Marketing. Tem mais ilustrações que a gente.",
       image: sophiaImg,
-      badge: "MARKETING",
+      badge: "DESIGNER",
     },
     {
       name: "SARA SANTOS",
       role: "ESTRATEGISTA",
       description: "Gerente de Tráfego, Especialista em Web Design. Amante de Performance. Mais de 8 anos implementando estratégias para Amazônia.",
       image: saraImg,
-      badge: "TRÁFEGO",
+      badge: "TRÁFEGO PAGO",
     },
   ];
 
@@ -41,10 +41,9 @@ export const Team = () => {
     <section className="py-20 bg-background">
       <div className="container">
         <div className="text-center mb-16">
-          <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Risus commodo id odio turpis pharetra elementum. Pulvinar porta porta feugiat 
-            scelerisque in elit. Morbi rhoncus, tellus, eros consequat magna semper orci a tincidunt.
-          </p>
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
+            Conheça nossa equipe
+          </h1>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

@@ -9,7 +9,7 @@ export const Testimonials = () => {
     {
       name: "DR MARCIO",
       role: "DR MARCIO",
-      subtitle: "", 
+      subtitle: "Ele lotou sua agenda por 2 meses",
       text: "Ele lotou a agenda por 2 meses, ganhou mais de 15 mil seguidores em apenas 30 dias e ainda alcançou conteúdos com mais de 1,2 milhão de visualizações.",
       image: drMarcioImg,
     },

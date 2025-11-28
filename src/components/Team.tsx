@@ -9,28 +9,28 @@ export const Team = () => {
   const team = [
     {
       name: "BRÍCIO",
-      role: "ANALISTA",
+      role: "ESTRATEGISTA",
       description: "Estrategista digital, e gestor da agência nocrato…",
       image: bricioImg,
       badge: "ESTRATEGISTA",
     },
     {
       name: "PEDRO",
-      role: "DESIGNER",
+      role: "PROGRAMADOR",
       description: "Desenvolvedor Web, Engenheiro de IA. Mais Engenheiro do que IA, mas é o cara certo para o trabalho!",
       image: pedroImg,
       badge: "PROGRAMADOR",
     },
     {
       name: "SOPHIA",
-      role: "REDATORA",
+      role: "DESIGNER",
       description: "Designer Sênior, Publicitária. Licencia de Arte, Especialista em Publicidade e Marketing. Tem mais ilustrações que a gente.",
       image: sophiaImg,
       badge: "DESIGNER",
     },
     {
       name: "SARA SANTOS",
-      role: "ESTRATEGISTA",
+      role: "TRÁFEGO PAGO",
       description: "Gerente de Tráfego, Especialista em Web Design. Amante de Performance. Mais de 8 anos implementando estratégias para Amazônia.",
       image: saraImg,
       badge: "TRÁFEGO PAGO",
@@ -54,9 +54,9 @@ export const Team = () => {
                   <img 
                     src={member.image} 
                     alt={member.name}
-                    className="w-32 h-32 rounded-full mx-auto object-cover mb-4"
+                    className="w-32 h-32 rounded-full mx-auto object-cover mb-4 border-4 border-primary/20"
                   />
-                  <Badge className="bg-primary text-primary-foreground mb-2">
+                  <Badge className="bg-primary text-primary-foreground mb-2 hover:bg-primary/90">
                     {member.badge}
                   </Badge>
                 </div>
